@@ -1,9 +1,17 @@
 version: "3.8"
 services:
-  APP_NAME:
+  prometheus_client_python:
     build:
       context: ./
       dockerfile: Dockerfile
-    container_name: APP_NAME
-    ports: []
+    container_name: prometheus_client_python
+    ports:
+      - "5050:5050"
     volumes: []
+    networks:
+      - prom-network
+
+networks:
+  prom-network:
+    name: prom-network
+    driver: bridge
