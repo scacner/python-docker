@@ -1,5 +1,3 @@
-OUTPUT := APP_NAME
-
 # set .phony
 .PHONY: docker clean
 
