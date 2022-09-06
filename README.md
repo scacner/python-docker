@@ -1,7 +1,13 @@
 # python-docker
 Run Python code within Docker.
 
-Note: Currently, this implementation allows only one Python module to run in Docker. 
+Note: Currently, this implementation allows only one Python module to run in Docker.
+
+## Branch `FinTechExplained_WebServer`
+This is an example app that is based off 
+[this Medium article](https://medium.com/fintechexplained/running-python-in-docker-container-58cda726d574).
+
+After starting the Docker container, going to `http://127.0.0.1:5050/` shows `[1,2,3]`.
 
 ## Setup
 The `main` branch has the initial files to run a python application.
