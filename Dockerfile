@@ -2,8 +2,8 @@ FROM python:3
 
 WORKDIR /src
 
-COPY . .
-
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["python", "-m", "APP_NAME"]
+COPY finteckexplained_webserver finteckexplained_webserver
+CMD ["python", "-m", "finteckexplained_webserver"]

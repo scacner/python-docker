@@ -1,4 +1,4 @@
-OUTPUT := APP_NAME
+OUTPUT := finteckexplained_webserver
 
 # set .phony
 .PHONY: docker clean

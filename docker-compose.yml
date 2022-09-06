@@ -1,9 +1,10 @@
 version: "3.3"
 services:
-  APP_NAME:
+  finteckexplained_webserver:
     build:
       context: ./
       dockerfile: Dockerfile
-    container_name: APP_NAME
-    ports: []
+    container_name: finteckexplained_webserver
+    ports:
+      - "5050:5050"
     volumes: []
